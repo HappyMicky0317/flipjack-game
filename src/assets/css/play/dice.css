@@ -1,0 +1,25 @@
+.mainplay-title-img{
+  width: 400px;
+}
+.random-card-container{
+  width: fit-content;
+  margin: auto;
+  margin-top: 50px;
+}
+.card-container{
+  display: inline-block;
+}
+.tournament-part {
+  display: flex;
+  margin-top: 40px;
+}
+.dealer-container{
+  width: 50%;
+}
+.user-container {
+  width: 50%;
+}
+.cart-outline{
+  width: fit-content;
+  margin: auto;
+}

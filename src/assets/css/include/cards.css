@@ -1,0 +1,244 @@
+.card {
+	background-color: #fff;
+	border-radius: 0.9vmin!important;
+	box-shadow: 0 0.5vmin 1vmin rgba(0, 0, 0, .12), 0 0.5vmin 1vmin rgba(0, 0, 0, .24);
+	box-sizing: border-box;
+	cursor: default;
+	display: inline-block!important;
+	font-family: monospace;
+	font-size: 1.5vmin;
+	font-weight: bold;
+	height: 15vmin;
+	line-height: 1;
+	margin: 0.3vmin;
+	padding: 1.5vmin;
+	position: relative;
+	vertical-align: top;
+	width: 10vmin;
+}
+.card header {
+	left: 0;
+	padding: 0.6vmin 0.45vmin;
+	position: absolute;
+	top: 0;
+}
+.card footer {
+	bottom: 0;
+	padding: 0.6vmin 0.45vmin;
+	position: absolute;
+	right: 0;
+	transform: rotate(180deg);
+}
+.card .rank, .card .suit {
+	display: block;
+}
+.card main {
+	align-items: center;
+	display: flex;
+	font-size: 2.5vmin;
+	justify-content: center;
+	height: 100%;
+}
+.card main i {
+	font-style: normal;
+}
+.hearts, .diamonds {
+	color: #c00;
+}
+.clubs, .spades {
+	color: #222;
+}
+.ace main {
+	font-size: 7vmin;
+}
+.two main {
+	flex-direction: column;
+	font-size: 3.6vmin;
+	justify-content: space-around;
+}
+.two main i:nth-child(2) {
+	transform: rotate(180deg);
+}
+.three main {
+	flex-direction: column;
+	font-size: 3.6vmin;
+	justify-content: space-around;
+}
+.three main i:nth-child(3) {
+	transform: rotate(180deg);
+}
+.four main {
+	align-content: space-around;
+	flex-wrap: wrap;
+	font-size: 3.6vmin;
+	justify-content: space-around;
+}
+.four main i {
+	flex: 1 1 50%;
+	text-align: center;
+}
+.four main i:nth-child(n+3) {
+	transform: rotate(180deg);
+}
+.five main {
+	align-content: space-around;
+	flex-wrap: wrap;
+	font-size: 3.6vmin;
+	justify-content: space-around;
+}
+.five main i {
+	flex: 1 1 50%;
+	text-align: center;
+}
+.five main i:nth-child(3) {
+	flex: 1 1 100%;
+}
+.five main i:nth-child(n+4) {
+	transform: rotate(180deg);
+}
+.six main {
+	align-content: space-around;
+	flex-wrap: wrap;
+	font-size: 3.6vmin;
+	justify-content: space-around;
+}
+.six main i {
+	flex: 1 1 50%;
+	text-align: center;
+}
+.six main i:nth-child(n+5) {
+	transform: rotate(180deg);
+}
+.seven main {
+	align-content: space-around;
+	flex-wrap: wrap;
+	font-size: 3.6vmin;
+	justify-content: space-around;
+}
+.seven main i {
+	flex: 1 1 50%;
+	line-height: 0.75;
+	text-align: center;
+}
+.seven main i:nth-child(3) {
+	flex: 1 1 100%;
+}
+.seven main i:nth-child(n+6) {
+	transform: rotate(180deg);
+}
+.eight main {
+	align-content: space-around;
+	flex-wrap: wrap;
+	font-size: 3.6vmin;
+	justify-content: space-around;
+}
+.eight main i {
+	flex: 1 1 50%;
+	line-height: 0.75;
+	text-align: center;
+}
+.eight main i:nth-child(3), .eight main i:nth-child(6) {
+	flex: 1 1 100%;
+}
+.eight main i:nth-child(n+6) {
+	transform: rotate(180deg);
+}
+.nine main {
+	align-content: space-around;
+	flex-wrap: wrap;
+	font-size: 3.6vmin;
+	justify-content: space-around;
+}
+.nine main i {
+	flex: 1 1 50%;
+	line-height: 0.75;
+	text-align: center;
+}
+.nine main i:nth-child(5) {
+	flex: 1 1 100%;
+}
+.nine main i:nth-child(n+6) {
+	transform: rotate(180deg);
+}
+.ten main {
+	align-content: space-around;
+	flex-wrap: wrap;
+	font-size: 3vmin;
+	justify-content: space-around;
+}
+.ten main i {
+	flex: 1 1 50%;
+	line-height: 0.75;
+	text-align: center;
+}
+.ten main i:nth-child(3), .ten main i:nth-child(8) {
+	flex: 1 1 100%;
+}
+.ten main i:nth-child(n+6) {
+	transform: rotate(180deg);
+}
+.jack main, .queen main, .king main {
+	align-content: center;
+	border: solid 0.3vmin #669;
+	flex-wrap: wrap;
+	line-height: 0.75;
+	overflow: hidden;
+	position: relative;
+}
+.jack main:before, .queen main:before, .king main:before {
+	border: double 1.5vmin #eee;
+	border-radius: 50%;
+	content: "";
+	height: 18vmin;
+	left: 50%;
+	position: absolute;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	width: 12vmin;
+}
+.jack main i, .queen main i, .king main i {
+	display: block;
+	font-size: 6vmin;
+	font-style: normal;
+}
+.jack main i:nth-child(n+2):nth-child(-n+3), .queen main i:nth-child(n+2):nth-child(-n+3), .king main i:nth-child(n+2):nth-child(-n+3) {
+	text-shadow: -0.15vmin 0.15vmin #fc0, -0.3vmin 0.3vmin #669;
+	z-index: 1;
+}
+.jack main i:nth-child(n+3), .queen main i:nth-child(n+3), .king main i:nth-child(n+3) {
+	transform: rotate(180deg);
+}
+.jack main i:first-child, .queen main i:first-child, .king main i:first-child {
+	font-size: 3.6vmin;
+	left: 0.3vmin;
+	position: absolute;
+	top: 0.3vmin;
+}
+.jack main i:nth-child(2), .queen main i:nth-child(2), .king main i:nth-child(2) {
+	position: absolute;
+	right: 0.6vmin;
+	top: 0.6vmin;
+}
+.jack main i:nth-child(3), .queen main i:nth-child(3), .king main i:nth-child(3) {
+	bottom: 0.6vmin;
+	left: 0.6vmin;
+	position: absolute;
+}
+.jack main i:last-child, .queen main i:last-child, .king main i:last-child {
+	bottom: 0.3vmin;
+	font-size: 3.6vmin;
+	position: absolute;
+	right: 0.3vmin;
+}
+.reverse {
+	/* background-color: #fff;
+	background-image: radial-gradient(closest-side, transparent 98%, #669 99%), radial-gradient(closest-side, transparent 98%, #669 99%);
+	background-size: 2vmin 2vmin;
+	background-position: 0 0, 0.75vmin 0.75vmin; */
+	content: '';
+	/* display: block; */
+	background-color: #556!important;
+	background-image: linear-gradient(30deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445), linear-gradient(150deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445), linear-gradient(30deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445), linear-gradient(150deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445), linear-gradient(60deg, #99a 25%, transparent 25.5%, transparent 75%, #99a 75%, #99a), linear-gradient(60deg, #99a 25%, transparent 25.5%, transparent 75%, #99a 75%, #99a);
+	background-size: 40px 70px;
+	background-position: 0 0, 0 0, 20px 35px, 20px 35px, 0 0, 20px 35px;
+}

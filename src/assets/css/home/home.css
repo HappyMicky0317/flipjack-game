@@ -1,0 +1,45 @@
+
+.content-format-home{
+  padding: 0 0 80px 0!important;
+  background-color: #000000;
+}
+.home-title-img {
+  width: 900px;
+  margin-top: 150px;
+}
+.logo-part {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.play-link {
+  color: black;
+  margin-top: 0px;
+}
+.dice-img {
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+.play-link:hover {
+  text-decoration: none;
+  color: black;
+}
+video::-webkit-media-controls-play-button {
+  display: none;
+}
+
+video::-webkit-media-controls-start-playback-button {
+  display: none;
+}
+@media (max-width: 1199px) {
+  .home-title-img {
+    width: 80%;
+    margin-top: 50px;
+  }
+}
+@media (max-width: 799px) {
+  .home-title-img {
+    width: 90%;
+    margin-top: 50px;
+  }
+}
